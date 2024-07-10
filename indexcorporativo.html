@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="corporativo.css">
+    <title>RUPAQ</title>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <div id="menu-left">
+                <span id="menu-text">Menu</span>
+                <ul class="submenu">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="acercadeN.html">Nosotros</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="indexcorporativo.html">Corporativo</a></li>
+                    <li><a href="contacto.html">Contáctenos</a></li>
+                </ul>
+            </div>
+            <div id="menu-center">
+                <h1>RUPAQ</h1>
+            </div>
+            <div id="menu-right">
+                <img src="img/fb.jpg" alt="Imagen 1">
+                <img src="img/ig.jpg" alt="Imagen 2">
+                <img src="img/tik tok.jpg" alt="Imagen 3">
+            </div>
+        </nav>
+    </header>
+    <main>
+    <div id="fix">
+        <div id="content-below-menu">
+            <h2><strong>Cómo funciona?</strong></h2>
+            <ol>
+                <li>Envía tu logo o diseño a grabar. (Formato AI, JPG, PNG)</li><br><br>
+                <li>¡Aprueba el diseño enviado por el equipo Vía WhatsApp o E-mail</li><br><br>
+                <li>¡Recibe el producto elegido con tu personalización!</li>
+            </ol>
+        </div>
+        <div id="images">
+            <img src="img/Deportivo.JPG" alt="Descripción de la imagen 1">
+            <img src="img/Tazas.JPG" alt="Descripción de la imagen 2">
+        </div>
+    </div>
+        <div id="formulario">
+            <h2>Solicita Cotización</h2>
+            <form>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad de pedido:</label>
+                    <input type="text" id="cantidad" name="cantidad" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (máx. 7 líneas):</label>
+                    <textarea id="mensaje" name="mensaje" rows="7" maxlength="1000" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>   

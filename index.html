@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUMAQ</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav id="menu">
+            <div id="menu-left">
+                <span id="menu-text">Menu</span>
+                <ul class="submenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acercadeN.html">Nosotros</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="indexcorporativo.html">Corporativo</a></li>
+                    <li><a href="contacto.html">Contáctenos</a></li>
+                </ul>
+            </div>
+            <div id="menu-center">
+                <h1>RUPAQ</h1>
+            </div>
+            <div id="menu-right">
+                <img src="img/fb.jpg" alt="Imagen 1">
+                <img src="img/ig.jpg" alt="Imagen 2">
+                <img src="img/tik tok.jpg" alt="Imagen 3">
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section id="inicio">
+            <section class="hero">
+                <img src="img/baner.jpg"
+                    alt="Celebra tus dias con RUMAQ">
+            </section>
+
+            <section class="products">
+                <h1>Todos los productos</h1>
+                <div class="product-grid">
+                    <div class="product" onclick="openPage('detalle.html')">
+                        <img src="img/bottle1.jpg" alt="RUMAQ Sport Curitiba 1200ml">
+                        <p>RUMAQ Sport Curitiba 1200ml</p>
+                        <p>S/.119.00</p>
+                        <span class="badge">Oferta</span>
+                    </div>
+                    <div class="product" onclick="openPage('detalle.html')">
+                        <img src="img/bottle2.jpg" alt="RUMAQ Sport Curitiba 1800ml">
+                        <p>RUMAQ Sport Curitiba 1800ml</p>
+                        <p>Agotado</p>
+                        <span class="badge">Oferta</span>
+                    </div>
+                    <div class="product" onclick="openPage('detalle.html')">
+                        <img src="img/bottle3.jpg" alt="RUMAQ Sport Máncora 1200ml">
+                        <p>RUMAQ Sport Máncora 1200ml</p>
+                        <p><span class="original-price">S/.119.00</span> S/.95.20</p>
+                        <span class="badge">Oferta</span>
+                    </div>
+                    <div class="product" onclick="openPage('detalle.html')">
+                        <img src="img/bottle4.jpg" alt="RUMAQ Sport II Pampilla 600ml">
+                        <p>RUMAQ Sport II Pampilla 600ml</p>
+                        <p>S/.89.00</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe">
+                <h2>Suscribirse</h2>
+                <form>
+                    <input type="email" placeholder="e.g., email@example.com">
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </section>
+
+        <section id="contacto" style="display:none;">
+            <h1>Contáctanos</h1>
+            <p>20162582@aloe.ulima.edu.pe</p>
+            <form>
+                <label for="name">Nombre *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="address">Dirección</label>
+                <input type="text" id="address" name="address">
+
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </section>
+
+        <section id="detalle" style="display:none;">
+            <h1 id="product-title"></h1>
+            <img id="product-image" src="" alt="Product Image">
+            <p id="product-price"></p>
+            <p id="product-original-price" style="text-decoration: line-through; color: red;"></p>
+            <button onclick="openPage('inicio.html')">Volver</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>RUMAQ Bottle</p>
+        <p>20162582@aloe.ulima.edu.pe</p>
+    </footer>
+
+    <script>
+        function openPage(pageUrl) {
+            window.open(pageUrl);
+        }
+    </script>
+</body>
+
+</html>
